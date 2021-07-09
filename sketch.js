@@ -31,7 +31,11 @@ function draw(){
        WriteStock(foodS)
        
     }
-    
+    if(foodS===0){
+        textSize(40);
+        text("Food has Exhausted",200,50);
+
+    }
 
    
     
@@ -44,9 +48,9 @@ function draw(){
 }
 
 function WriteStock(petFOOD){
-    if(petFOOD<=0){
+    if(petFOOD===0){
         petFOOD=0
-           
+       
     }
     else{
         petFOOD=petFOOD-1;
